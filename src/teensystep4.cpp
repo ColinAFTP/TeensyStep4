@@ -14,6 +14,7 @@ namespace TS4
         if(useDefaultModule)
         {
             TimerFactory::attachModule(new TMRModule<3>());
+            NVIC_SET_PRIORITY(IRQ_QTIMER4, 16);
         }
     }
 }
